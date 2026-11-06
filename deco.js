@@ -28,10 +28,10 @@ window.DECO = {
 
   /* ↓ 在这里新增，一天一笔。下面是范本，用的时候把开头的 // 删掉 ↓ */
 
-  // 泡泡会变、详情框也有 3 张图：
-  // "2025-11-05": {
-  //   bubble: "images/1105-bubble.png",
-  //   card: ["images/1105-a.png", "images/1105-b.png", "images/1105-c.png"],
+  // 泡泡会变、详情框也有 3 张图： 
+     "2025-11-07": {
+     bubble: "images/1107.png",
+     card: ["images/1100.png", "images/1100.png", "images/1100.png"],
   // },
 
   // 泡泡不变、只有详情框放图：
