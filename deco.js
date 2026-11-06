@@ -45,3 +45,44 @@ window.DECO = {
  },
 
 };
+/* ==========================================================
+   详情框右上角的图（一张，所有「有事件」的日子自动放）
+   ----------------------------------------------------------
+   CARD_PIC   图片位置。换图只要改这里。
+   CARD_SIZE  图的宽度 = 详情框宽度的百分之几（等比例缩放）。
+   CARD_MIN / CARD_MAX  最小、最大宽度（像素），避免太小或太大。
+   上面 window.DECO 里如果某天自己写了 card，就以那天写的为准。
+   ========================================================== */
+(function () {
+  var CARD_PIC  = "images/yyzq.png";
+  var CARD_SIZE = 24;
+  var CARD_MIN  = 70;
+  var CARD_MAX  = 150;
+
+  var D = window.DECO = window.DECO || {};
+  var norm = function (s) {
+    var m = String(s || "").trim().match(/^(\d{4})\D+(\d{1,2})\D+(\d{1,2})/);
+    return m ? m[1] + "-" + ("0" + m[2]).slice(-2) + "-" + ("0" + m[3]).slice(-2) : "";
+  };
+  var keyOf = {};
+  Object.keys(D).forEach(function (k) { var n = norm(k); if (n) keyOf[n] = k; });
+
+  (window.REPLAYS || []).forEach(function (r) {
+    var ev = (r.event && String(r.event).trim()) || (r.tags || []).indexOf("大事记") >= 0;
+    var day = norm(r.date);
+    if (!ev || !day) return;
+    var k = keyOf[day] || (keyOf[day] = day);
+    var v = D[k] = D[k] || {};
+    if (!v.card || !v.card.length) v.card = [CARD_PIC];
+  });
+
+  /* 只有一张图时的版面：横向的图，宽度跟着详情框等比例缩放 */
+  var css =
+    '.card.has-deco[style*="--n:1"]{--cw:clamp(' + CARD_MIN + 'px,' + CARD_SIZE + 'cqi,' + CARD_MAX + 'px)}' +
+    '.card.has-deco[style*="--n:1"] .card-deco{top:calc(var(--cw) * .06);right:calc(var(--cw) * .1)}' +
+    '.card.has-deco[style*="--n:1"] .card-deco img{width:var(--cw);height:auto;aspect-ratio:1.58;object-fit:cover;object-position:50% 60%}' +
+    '.card.has-deco[style*="--n:1"] .card-head{padding-right:calc(var(--cw) * 1.1)}';
+  var st = document.createElement("style");
+  st.textContent = css;
+  (document.head || document.documentElement).appendChild(st);
+})();
