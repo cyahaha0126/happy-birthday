@@ -38,6 +38,8 @@ window.DECO = {
      bubble: "images/0926.png",},
    "2025-09-29": {
      bubble: "images/0926.png",},
+   "2025-10-29": {
+     bubble: "images/0926.png",},
    "2025-10-06": {
      bubble: "images/1006.png",},
    "2026-10-30": {
@@ -65,6 +67,8 @@ window.DECO = {
    "2026-04-30": {
      bubble: "images/0430.png",},
    "2026-07-18": {
+     bubble: "images/0718.png",
+   "2026-07-19": {
      bubble: "images/0718.png",
 
  },
