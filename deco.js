@@ -29,9 +29,9 @@ window.DECO = {
   /* ↓ 在这里新增，一天一笔。下面是范本，用的时候把开头的 // 删掉 ↓ */
 
   // 泡泡会变、详情框也有 3 张图： 
-     "2025-11-07": {
-     bubble: "images/1107.png",
-     card: ["images/1100.png", "images/1100.png", "images/1100.png"],
+  //   "2025-11-07": {
+  //   bubble: "images/1107.png",
+  //   card: ["images/1100.png", "images/1100.png", "images/1100.png"],
   // },
 
   // 泡泡不变、只有详情框放图：
@@ -40,8 +40,8 @@ window.DECO = {
   // },
 
   // 只有泡泡会变、详情框不放图：
-  // "2026-01-08": {
-  //   bubble: "images/0108-bubble.png",
+   "2026-11-07": {
+     bubble: "images/1107.png",
   // },
 
 };
