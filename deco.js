@@ -28,20 +28,45 @@ window.DECO = {
 
   /* ↓ 在这里新增，一天一笔。下面是范本，用的时候把开头的 // 删掉 ↓ */
 
-  // 泡泡会变、详情框也有 3 张图： 
-  //   "2025-11-07": {
-  //   bubble: "images/1107.png",
-  //   card: ["images/1100.png", "images/1100.png", "images/1100.png"],
-  // },
-
-  // 泡泡不变、只有详情框放图：
-  // "2025-12-02": {
-  //   card: ["images/1202-a.png", "images/1202-b.png", "images/1202-c.png"],
-  // },
-
-  // 只有泡泡会变、详情框不放图：
+   "2025-09-25": {
+     bubble: "images/0926.png",}
+   "2025-09-26": {
+     bubble: "images/0926.png",}
+   "2025-09-27": {
+     bubble: "images/0926.png",}
+   "2025-09-28": {
+     bubble: "images/0926.png",}
+   "2025-09-29": {
+     bubble: "images/0926.png",}
+   "2025-10-06": {
+     bubble: "images/1006.png",}
+   "2026-10-30": {
+     bubble: "images/1030.png",}
    "2025-11-07": {
-     bubble: "images/1107.png",
+     bubble: "images/1107.png",}
+   "2025-11-29": {
+     bubble: "images/1129.png",}
+   "2025-12-31": {
+     bubble: "images/1231.png",}
+   "2026-01-29": {
+     bubble: "images/0129.png",}
+   "2026-02-21": {
+     bubble: "images/0221.png",}
+   "2026-03-14": {
+     bubble: "images/0314.png",}
+   "2026-03-15": {
+     bubble: "images/0315.png",}
+   "2026-03-29": {
+     bubble: "images/0329.png",}
+   "2026-04-20": {
+     bubble: "images/0420.png",}
+   "2026-04-29": {
+     bubble: "images/0429.png",}
+   "2026-04-30": {
+     bubble: "images/0430.png",}
+   "2026-07-18": {
+     bubble: "images/0718.png",
+
  },
 
 };
