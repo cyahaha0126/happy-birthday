@@ -676,6 +676,10 @@ window.REPLAYS = [
    { date: "2026-11-06",
     event: "牛霸天：下播！",
     t01: ["https://www.bilibili.com/video/BV1TK4z6dEMo/?t=305"] },
+   { date: "2026-11-11",
+    event: "一烨知秋要幸福",
+    t01: ["https://www.bilibili.com/video/BV1zeWm6ZEFX/?"] ,
+    fengye: ["https://www.bilibili.com/video/BV1TAWX6sEcW/?"] },
     
    
   /* ---------- 范本：复制下面 { 到 }, 这一段，贴在这行「上面」再改 ----------
