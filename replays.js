@@ -680,6 +680,12 @@ window.REPLAYS = [
     event: "一烨知秋要幸福",
     t01: ["https://www.bilibili.com/video/BV1zeWm6ZEFX/?"] ,
     fengye: ["https://www.bilibili.com/video/BV1TAWX6sEcW/?"] },
+    { date: "2026-11-12",
+    event: "某牛直播看直播",
+    t01: ["https://www.bilibili.com/video/BV17mWY6XEXB/?t=5990"] },
+   { date: "2026-11-13",
+    event: "祝我们冒险成功",
+    fengye: ["https://www.bilibili.com/video/BV1rcWy69EgQ/?t=4939"] },
     
    
   /* ---------- 范本：复制下面 { 到 }, 这一段，贴在这行「上面」再改 ----------
